@@ -1,0 +1,35 @@
+.cadastrar--main{
+  min-height: 80vh;
+}
+section form {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    padding-top: 15rem;
+    margin: auto;
+}
+
+section input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+    width: 80%;
+}
+
+@media screen and (max-width: 766px) {
+    section form {
+        width: auto;
+        padding: 15px;
+        padding-top: 8rem;
+        margin: auto;
+    }
+}
+@media screen and (width: 768px) {
+    section form {
+        width: 50%;
+        padding: 15px;
+        padding-top: 8rem;
+        margin: auto;
+    }
+}

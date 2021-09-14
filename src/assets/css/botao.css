@@ -1,0 +1,28 @@
+section button {
+    width: 50%;
+    padding: 10px;
+
+    background-color: rgb(37, 95, 99);
+
+    border-color: cornsilk;
+
+    border: none;
+
+    border-radius: 5px;
+
+    color: white;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    transition: all 0.5s;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+section button:hover{
+    background-color: seagreen;
+
+    box-shadow: 10px 30px 30px rgba(0, 0, 0, 0.589);
+
+    transform: scale(1.2);
+}
