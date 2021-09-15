@@ -7,22 +7,25 @@ class Cliente
         
         $this->mysql = $mysql;
     }
-
-
-    public function adicionar(string $nome, string $email, string $usuario, string $senha): void
+    public function adicionar(string $nomeproduto,string $descricao, string $dataproduto, string $nome): void  
     {
-        $CadastrarCliente = $this->mysql->prepare('INSERT INTO Cliente (nome, email, usuario, senha) VALUES (?,?,?,?);');
-        $CadastrarCliente->bind_param('ssss', $nome, $email, $usuario, $senha);
-        $CadastrarCliente->execute(); 
-        
+    $cadastro = $this->mysql->prepare('INSERT INTO  produtoscadastrados(nomeproduto, descricao, dataproduto, nome) VALUES(?,?,?,?);'); /* metodo para fazer a consulta no banco de dados */
+    $cadastro->bind_param('ssss', $nomeproduto, $descricao, $dataproduto, $nome); /* inserindo no campo consultado */ 
+    $cadastro->execute(); 
     }
     public function exibirTodos(): array
     {
-        $result = $this->mysql->query('SELECT * FROM Cliente ORDER BY nome ASC, id DESC;');
+        $result = $this->mysql->query('SELECT * FROM produtoscadastrados ORDER BY id ASC, dataproduto ASC, nomeproduto ASC;');
         $produtos = $result->fetch_all(MYSQLI_ASSOC); 
         return $produtos;
 
     }
-}
+    public function remover(string $id): void
+    {
+        $removerCliente = $this->mysql->prepare('DELETE FROM produtoscadastrados WHERE id = ?;');
+        $removerCliente->bind_param('s', $id);
+        $removerCliente->execute();
+    }
 
+}
 ?>

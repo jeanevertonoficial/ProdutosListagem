@@ -25,7 +25,7 @@ main {
     padding-top: 20rem;
     color: white;
 }
-div h5 {
+main h5 {
     font-family: 'Caveat', cursive;
     width: 80%;
     margin: auto;

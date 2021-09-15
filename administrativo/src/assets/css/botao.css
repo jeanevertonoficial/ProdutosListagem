@@ -26,21 +26,3 @@ section button:hover{
 
     transform: scale(1.2);
 }
-
-.botoes--editar--excluir {
-  
-    margin: inherit;
-margin-top: 20px;
-
-    text-align: center;
-    width: 45%;
-
-    background-color: rgb(163, 0, 0);
-    
-    
-}
- .botoes--editar--editar{
-    margin: inherit; 
-    width: 45%;
-   
-}

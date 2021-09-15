@@ -1,0 +1,29 @@
+.card--section {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+   
+    margin: auto;
+}
+section .card {
+    display:flex;
+    width: 25rem;
+
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.205);
+  
+}
+
+@media screen and (max-width: 766px) {
+    .card--section {
+        flex-direction: column;
+        width: 96%;
+    }
+    section .card {
+        width: 15rem;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    div.card{
+        width: none;
+    }
+}

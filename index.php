@@ -5,7 +5,7 @@
     </section>
     <section class="section--conteudo">
         <div>
-            <h5>
+            <h5 class="descricao--index">
                 <p>Este site foi criado para solucionar problemas de buscas de projetos.</p>
             </h5>
         </div>

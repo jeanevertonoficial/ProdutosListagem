@@ -1,11 +1,10 @@
-section button {
-    width: 50%;
+.btn{
     padding: 10px;
 
     background-color: rgb(37, 95, 99);
 
     border-color: cornsilk;
-
+    
     border: none;
 
     border-radius: 5px;
@@ -15,11 +14,17 @@ section button {
     font-family:Arial, Helvetica, sans-serif;
 
     transition: all 0.5s;
-
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    display: flex;
+    align-items: center
 }
-section button:hover{
+
+form img {
+    display: flex;
+    justify-items: start;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+.btn:hover {
     background-color: seagreen;
 
     box-shadow: 10px 30px 30px rgba(0, 0, 0, 0.589);
@@ -27,20 +32,16 @@ section button:hover{
     transform: scale(1.2);
 }
 
-.botoes--editar--excluir {
-  
-    margin: inherit;
-margin-top: 20px;
+@media screen and (max-width: 766px) {
+    .bs-example {
+        width: 80%;
+    }
 
-    text-align: center;
-    width: 45%;
+    .btn  {
+        width: 80%;
+            
+        margin-top: 2rem;
+      
+    }
 
-    background-color: rgb(163, 0, 0);
-    
-    
-}
- .botoes--editar--editar{
-    margin: inherit; 
-    width: 45%;
-   
 }

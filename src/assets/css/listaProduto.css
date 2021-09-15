@@ -1,0 +1,50 @@
+main section.section--produto{
+    width: 80%;
+    margin: auto;
+}
+main .navProdutos {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+a {
+    color: inherit;
+    width: inherit;
+    text-align: inherit;
+}
+label h5 {
+   
+    font-size: inherit;
+    justify-items: center;
+    font-family: cursive;
+    margin: auto;
+    margin-top: 5rem;
+    padding: inherit;
+
+    width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    
+    background-color: rgb(156, 156, 156);
+    padding: 15px;
+
+    border-radius: 10px;
+} 
+
+
+@media screen and (max-width: 766px) {
+    main .navProdutos {
+        width: auto;
+    }
+    div label h5  {
+        
+    margin-bottom: 1rem;
+        width: 90%;
+        padding: auto;
+        font-size: 10px;
+    }
+    main section.section--produto {
+        width: 90%;}
+}
