@@ -3,19 +3,24 @@
 class Usuario
 {
     private ?int $id;
-    private $nome;
     private $nomeproduto;
     private $senha;
     private $email;
+    private $nome;
+    private $categoria;
+    private $subcategoria;
 
     
-    public function __construct(string $id, string $nome, string $nomeproduto, string $senha, string $email)
+    public function __construct(string $id, string $nome,string $categoria, string $subcategoria,
+     string $nomeproduto, string $senha, string $email)
     {
         $this->id = $id;
         $this->nome = $nome;
         $this->nomeproduto = $nomeproduto;
         $this->email = $email;
         $this->nome = $senha;
+        $this->categoria = $categoria;
+        $this->subcategoria = $subcategoria;
 
         if ($nome[0] === "") {
             $this->nome = "Nome inválido"; // nome vazio 
@@ -32,6 +37,12 @@ class Usuario
 
     public function getSenha() {
         return $this->senha;
+    }
+    public function getCategoria() {
+        return $this->categoria;
+    }
+    public function getSubcategoria() {
+        return $this->subcategoria;
     }
     public function getId() {
         return $this->id;
@@ -54,7 +65,15 @@ class Usuario
     {
         $this->email = $email;
     }
-  
+    private function setCategoria(string $categoria): void
+    {
+        $this->categoria = $categoria;
+    }
+    private function setSubcategoria(string $subcategoria): void
+    {
+        $this->subcategoria = $subcategoria;
+    }
+    
   //  VALIDAÇÃO DE EMAIL 
   public function validaEmail(string $email)  // recebe o parametro email
   {
