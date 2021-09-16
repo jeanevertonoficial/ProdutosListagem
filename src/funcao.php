@@ -9,11 +9,11 @@ class Cliente
     }
 
 
-    public function adicionar(string $nomeproduto, string $categoria, string $subcategoria, string $descricao, string $dataproduto,  string $setor, string $nome): void  
+    public function adicionar(string $nomeproduto, string $categoria, string $subcategoria, string $descricao, string $dataproduto,  string $setor,string $nome): void  
     {
     $cadastro = $this->mysql->prepare('INSERT INTO  produtoscadastrados (nomeproduto, categoria, subcategoria, descricao, dataproduto, setor, nome) VALUES(?,?,?,?,?,?,?);'); /* metodo para fazer a consulta no banco de dados */
     $cadastro->bind_param('sssssss', $nomeproduto, $categoria, $subcategoria, $descricao, $dataproduto, $setor, $nome); /* inserindo no campo consultado */ 
-    var_dump($cadastro);
+   // var_dump($cadastro);
     $cadastro->execute(); 
 
     }

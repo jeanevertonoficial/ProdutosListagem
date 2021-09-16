@@ -1,6 +1,6 @@
 <?php include_once("includes/header.php"); ?>
 <?php require 'src/config.php' ?>
-<?php include_once 'src/funcao.php' ?>
+
 <?php include_once 'src/redireciona.php' ?>
 <?php include_once 'src/usuarioproduto.php' ?>
 
@@ -58,34 +58,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <fieldset>
                 <p>SETOR
                     <select name="setor" id="">
-                        <optgroup label="Administrativo">
-                            <option value="administrativo">Administração</option>
-                            <option value="Encarregado(a)">Encarregado(a)</option>
-                            <option value="Gerente">Gerente</option>
-                            <option value="Auxiliar">Auxiliar</option>
-                            <option value="Suporte">Suporte</option>
+                        <optgroup name="setor" label="Administrativo">
+                            <option name="setor" value="administrativo">Administração</option>
+                            <option name="setor" value="Encarregado(a)">Encarregado(a)</option>
+                            <option name="setor" value="Gerente">Gerente</option>
+                            <option name="setor" value="Auxiliar">Auxiliar</option>
+                            <option name="setor" value="Suporte">Suporte</option>
                         </optgroup>
-                        <optgroup label="Diretoria">
-                            <option value="diretoria">Diretoria</option>
+                        <optgroup name="setor" label="Diretoria">
+                            <option name="setor"value="diretoria">Diretoria</option>
                         </optgroup>
-                        <optgroup label="Produção">
-                            <option value="producao">Producao</option>
+                        <optgroup name="setor" label="Produção">
+                            <option name="setor" value="producao">Producao</option>
                         </optgroup>
-                        <optgroup label="Atendimento">
-                            <option value="atendimento">Atendimento</option>
+                        <optgroup name="setor" label="Atendimento">
+                            <option name="setor" value="atendimento">Atendimento</option>
                         </optgroup>
-                        <optgroup label="TI Informática">
-                            <option value="Desenvolvedor Web">Desenvolvedor Web</option>
-                            <option value="Front-end">Front-end</option>
-                            <option value="Brack-end">Brack-end</option>
-                            <option value="Tester">Tester</option>
-                            <option value="Gestão de projeto">Gestão de projeto</option>
-                            <option value="Gerente">Gerente</option>
-                            <option value="Encarregado">Encarregado</option>
-                            <option value="Suporte Tecnico">Suporte Tecnico</option>
+                        <optgroup name="setor" label="TI Informática">
+                            <option name="setor" value="Desenvolvedor Web">Desenvolvedor Web</option>
+                            <option name="setor" value="Front-end">Front-end</option>
+                            <option name="setor" value="Brack-end">Brack-end</option>
+                            <option name="setor" value="Tester">Tester</option>
+                            <option name="setor" value="Gestão de projeto">Gestão de projeto</option>
+                            <option name="setor" value="Gerente">Gerente</option>
+                            <option name="setor" value="Encarregado">Encarregado</option>
+                            <option name="setor" value="Suporte Tecnico">Suporte Tecnico</option>
                         </optgroup>
-                        <optgroup label="Zeladoria">
-                            <option value="zelador">Zelador(a)</option>
+                        <optgroup name="setor" label="Zeladoria">
+                            <option name="setor" value="zelador">Zelador(a)</option>
                         </optgroup>
                     </select>
                 </p>
