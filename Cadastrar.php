@@ -1,12 +1,13 @@
 <?php include_once("includes/header.php"); ?>
 <?php require 'src/config.php' ?>
-
+<?php require 'src/funcao.php' ?>
 <?php include_once 'src/redireciona.php' ?>
 <?php include_once 'src/usuarioproduto.php' ?>
 
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
     $cadastro = new Cliente($mysql);
     $cadastro->adicionar(
         $_POST['nomeproduto'],
@@ -24,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 <section class="cadastrar--main">
-    <form action=" " method="POST">
+    <form action="" method="POST">
         </fieldset>
         <fieldset>
             <legend>Nome do Produto</legend>

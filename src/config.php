@@ -1,6 +1,6 @@
 <?php 
 
-$mysql = new mysqli('localhost', 'root','Donmisterjan10','cadastroprodutos') or die ("Erro ao Conectar ao banco de dados");
+$mysql = new mysqli('localhost', 'root','','cadastroprodutos') or die ("Erro ao Conectar ao banco de dados");
 
 if($mysql == true) {
 }else {
