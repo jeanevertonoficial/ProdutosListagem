@@ -58,16 +58,8 @@
 
                 </form>
             </div>
-            <?php
-                            session_start();
-                            if((!isset ($_SESSION['usuario']) == true) and (!isset ($_SESSION['senha']) == true)and (!isset ($_SESSION['id']) == true))
-                                {
-                                    unset($_SESSION['id']);
-                                    unset($_SESSION['usuario']);
-                                    unset($_SESSION['senha']);
-                                    header('location: login.php');
-                                }
-                            
-                            ?>  
+         
+          
+            </div>
         </nav>
     </header>

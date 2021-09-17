@@ -1,6 +1,6 @@
 <?php include_once("includes/header.php");?>
 
-
+<?php session_start()?>
 <?php $erro = isset($_GET["erro"]) ? $_GET["erro"] : 0;  // retorna erro se houver algum na url 
 ?>
 <?php // alto reload refrex
@@ -11,12 +11,6 @@ $sec = "60";
 <meta http-equiv="refresh" content="<?php echo $sec?>;URL='<?php echo $page?>'">
 */
 ?>
-<link rel="icon" href="../img/jean-logo-30.png" type="image/x-icon">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="src/assets/css/login.css">
-<link rel="stylesheet" href="src/assets/css/links.css">
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 <main>
     <section class="login-main">
         <div class="bs-example">

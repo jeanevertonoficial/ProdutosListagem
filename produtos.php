@@ -4,6 +4,8 @@
 <link rel="stylesheet" href="src/assets/css/listaProduto.css">
 
 <?php
+
+
 $exibirProdutos = new Cliente($mysql);
 $exibirProdutos = $exibirProdutos->exibirTodos();
 ?>
@@ -47,9 +49,9 @@ $exibirProdutos = $exibirProdutos->exibirTodos();
                     </td>
                     <td>
                         <a href="removerProduto.php?id=<?php echo $exibirProdutos['id'] ?>">
-                            <button class="botoes--editar--excluir" href="removerProduto.php? id=<?php echo $exibirProdutos['id']; ?>">Excluir</button>
+                            <button class="botao botoes--editar--excluir" href="removerProduto.php? id=<?php echo $exibirProdutos['id']; ?>">Excluir</button>
                         </a>
-                        <button class="botoes--editar--editar" href="editar.php? id=<?php echo $CadastraCliente['id']; ?>">Editar</button>
+                        <button class="botao botoes--editar--editar" href="editar.php? id=<?php echo $CadastraCliente['id']; ?>">Editar</button>
                     </td>
                 </tr>
             <?php endforeach ?>

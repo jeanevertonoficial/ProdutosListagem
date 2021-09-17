@@ -1,6 +1,6 @@
-section button {
-    width: 50%;
-    padding: 10px;
+.botao {
+   
+    padding: 5px;
 
     background-color: rgb(37, 95, 99);
 
@@ -18,8 +18,9 @@ section button {
 
     margin-top: 2rem;
     margin-bottom: 2rem;
+    
 }
-section button:hover{
+.botao:hover{
     background-color: seagreen;
 
     box-shadow: 10px 30px 30px rgba(0, 0, 0, 0.589);
@@ -28,19 +29,13 @@ section button:hover{
 }
 
 .botoes--editar--excluir {
-  
-    margin: inherit;
-margin-top: 20px;
 
     text-align: center;
     width: 45%;
 
     background-color: rgb(163, 0, 0);
-    
-    
 }
  .botoes--editar--editar{
-    margin: inherit; 
     width: 45%;
    
 }

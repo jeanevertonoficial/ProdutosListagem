@@ -57,6 +57,8 @@
                     <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Search">
                     <button class="btn--busca" type="submit">Buscar</button>
                 </form>
+               
+                </div>
             </div>
         </nav>
     </header>

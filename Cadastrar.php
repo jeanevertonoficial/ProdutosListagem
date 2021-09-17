@@ -23,6 +23,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     redireciona("produtos.php");
 }
 ?>
+<?php
+session_start();
+?>
 
 <section class="cadastrar--main">
     <form action="" method="POST">
@@ -67,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <option name="setor" value="Suporte">Suporte</option>
                         </optgroup>
                         <optgroup name="setor" label="Diretoria">
-                            <option name="setor"value="diretoria">Diretoria</option>
+                            <option name="setor" value="diretoria">Diretoria</option>
                         </optgroup>
                         <optgroup name="setor" label="Produção">
                             <option name="setor" value="producao">Producao</option>
@@ -93,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <legend>Usuario</legend>
                 <input type="text" placeholder="Digite seu nome..." name="nome" required>
             </fieldset>
-            <button>Cadastrar</button>
+            <button class="botao">Cadastrar</button>
 
     </form>
 </section>
